@@ -8,9 +8,10 @@ function writePassword() {
   let randopasso = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890±!@#$%^&*()_+-=";
   Math.floor(Math.random() * 128) + 8;
   console.log (Math.floor (Math.random() * 128) + 8);
-  let randopasso = Math.floor(Math.random() * 128) + 8;
+  let passwordlength = Math.floor(Math.random() * 128) + 8;
   for (var i = 0; i < passwordlength; i++) {
-    let passwordindex = 
+    let passwordindex = Math.floor(Math.random() * 72)
+    stringnames += randopasso[passwordindex]
   }
   passwordText.value = password;
 
