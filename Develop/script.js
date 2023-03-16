@@ -1,33 +1,29 @@
 // Assignment Code; let is more modern version of var
-let generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate");
 
 
 // Write password to the #password input
 function generatePassword() {
-  let stringnames = "" ;
-  let randopasso = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890±!@#$%^&*()_+-=";
-
+  var stringnames = "";
+  var randompassword = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890±!@#$%^&*()_+-=";
   Math.floor(Math.random() * 128) + 8;
   console.log (Math.floor (Math.random() * 128) + 8);
-
-  let passwordlength = Math.floor(Math.random() * 128) + 8;
-
-  for (var i = 0; i < passwordlength; i++) {
-    let passwordindex = Math.floor(Math.random() * 72)
-    stringnames += randopasso[passwordindex];
+  var passwordlength = Math.floor(Math.random() * 128) + 8;
+  for (var i = 0; i < passwordlength; i++){
+    var passwordindex = Math.floor(Math.random() * 72)
+    stringnames += randompassword[passwordindex];
 
   }
 
   return stringnames;
-  
 
 }
 
-function writePassword () {
-  let password = generatePassword();
-  let passwordText = document.querySelector("#password");
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
-  passwordText.value = password
+  passwordText.value = password;
 }
 
 
