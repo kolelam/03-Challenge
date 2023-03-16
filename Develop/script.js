@@ -6,8 +6,8 @@ let generateBtn = document.querySelector("#generate");
 function writePassword() {
   let stringnames = "" ;
   let randopasso = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890±!@#$%^&*()_+-=";
-
-
+  Math.floor(Math.random() * 128) + 8;
+  let randopasso = math.floor(Math.random() * 128) + 8;
   passwordText.value = password;
 
 }
